@@ -15,13 +15,17 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+main {
+  padding: 20px;
 }
 
 .App-link {
@@ -35,4 +39,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.create-account {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-account form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account form div {
+  margin-bottom: 15px;
+}
+
+.create-account form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-account form input,
+.create-account form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.create-account button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.create-account button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: #4caf50;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.create-account {
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.alert.success {
+  background-color: #4caf50;
+}
+
+.alert.error {
+  background-color: #f44336;
 }
